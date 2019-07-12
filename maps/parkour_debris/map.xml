@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map name="Parkour: Debris" version="1.0.0" spec="1.0.0">
+    <include src="defaults.xml"/>
+
+    <authors>
+        <author uuid="d9b4ffbc11d0453aa93f82dc59fca4b6"/>
+    </authors>
+
+    <ffa min="4" max="16" max-overfill="16"/>
+    <channels team-chat="true" global-chat="false"/>
+    <spawns>
+        <spawn team="spectators" yaw="180">
+            <regions>
+                <point>-15, 3, -1</point>
+            </regions>
+        </spawn>
+        <spawn yaw="90" loadout="players-loadout">
+            <regions>
+                <point>1, 1, -1</point>
+            </regions>
+        </spawn>
+    </spawns>
+
+    <loadouts>
+        <loadout id="players-loadout">
+            <effect duration="5s">damage resistance</effect>
+            <effect amplifier="100">saturation</effect>
+            <helmet team-color="true" material="leather helmet" unbreakable="true"/>
+            <chestplate team-color="true" material="leather chestplate" unbreakable="true"/>
+            <leggings team-color="true" material="leather leggings" unbreakable="true"/>
+            <boots team-color="true" material="leather boots" unbreakable="true"/>
+        </loadout>
+    </loadouts>
+    <damage>
+       <disable>
+           <any>
+               <damage>fall</damage>
+           </any>
+       </disable>
+    </damage>
+    <zones>
+        <zone>
+            <region>
+                <below y="0"/>
+            </region>
+            <portal yaw="90">
+                <destination>
+                    <point>1, 1, -1</point>
+                </destination>
+            </portal>
+        </zone>
+        <zone>
+            <region>
+                <cuboid min="0, 50, -2" max="2, 49, -3"/>
+            </region>
+            <scorebox points="1"/>
+        </zone>
+        <zone modify="never" region="everywhere"/>
+    </zones>
+
+   <objectives>
+       <score limit="1"/>
+   </objectives>
+
+   <results>
+       <win scenario="objectives">
+           <check>
+               <time>6m</time>
+           </check>
+       </win>
+   </results>
+
+    <!-- <elimination/> -->
+</map>

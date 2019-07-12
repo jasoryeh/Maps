@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map name="Scaffold" version="1.0.0" spec="1.0.0">
+    <include src="defaults.xml"/>
+    <include src="Shared/reward-one-gap.xml"/>
+    <include src="Shared/phases-dtc.xml"/>
+    <authors>
+        <author uuid="bf3319534f9243ee8abc7544b8234936"/> <!-- Oystervice -->
+    </authors>
+
+    <teams>
+        <team id="green" color="green" min="2" max="16">{colors.green}</team>
+        <team id="red" color="red" min="2" max="16">{colors.red}</team>
+    </teams>
+
+    <spawns>
+        <!-- Spectator spawn -->
+        <spawn>
+            <regions>
+                <point yaw="180">-39, 35, 79</point>
+            </regions>
+        </spawn>
+        <!-- Team spawns -->
+        <spawn team="red" loadout="default" yaw="-180">
+            <regions>
+                <point yaw="-180">-106, 25, 61</point>
+                <point yaw="-180">-99, 25, 61</point>
+                <point yaw="-180">-92, 25, 61</point>
+            </regions>
+        </spawn>
+        <spawn team="green" loadout="default" yaw="180">
+            <regions>
+                <point yaw="180">-8, 25, 61</point>
+                <point yaw="180">-1, 25, 61</point>
+                <point yaw="180">-15, 25, 61</point>
+            </regions>
+        </spawn>
+    </spawns>
+
+    <objectives>
+        <leakables materials="obsidian" destroyable="true" first-phase="gold">
+            <leakables owner="green">
+                <leakable name="Core" leak-distance="4" repairable="true">
+                    <region>
+                      <cuboid min="-9, 28, 0" max="-7, 32, -2"/>
+                    </region>
+                </leakable>
+            </leakables>
+            <leakables owner="red">
+                <leakable name="Core" leak-distance="4" repairable="true">
+                    <region>
+                      <cuboid min="-98, 28, 0" max="-100, 32, -2"/>
+                    </region>
+                </leakable>
+            </leakables>
+        </leakables>
+    </objectives>
+
+    <loadouts>
+        <loadout id="default">
+            <helmet material="leather helmet" team-color="true"/>
+            <chestplate material="leather chestplate" team-color="true"/>
+            <leggings material="iron leggings"/>
+            <boots material="leather boots" team-color="true"/>
+            <item slot="0" material="iron sword"/>
+            <item slot="1" material="bow">
+               <enchantment>arrow infinite</enchantment>
+            </item>
+            <item slot="2" material="diamond pickaxe"/>
+            <item slot="3" material="iron axe"/>
+            <item slot="4" material="golden apple" amount="3"/>
+            <item slot="5" material="log" amount="64"/>
+            <item slot="6" material="glass" amount="64"/>
+            <item slot="7" material="bucket"/>
+            <item slot="8" material="bread" amount="48"/>
+            <item slot="28" material="arrow" amount="1"/>
+        </loadout>
+        <loadout id="kill-reward">
+           <item material="golden apple"/>
+       </loadout>
+    </loadouts>
+    <kills>
+       <rewards>
+           <reward loadout="kill-reward"/>
+       </rewards>
+    </kills>
+
+    <phases countdown-message="{phases.transition}" fail-message="{phases.cores.fail}">
+        <phase id="gold" success-message="{phases.core.gold}" delay="25m" pass-phase="glass">
+            ^eGold
+            <materials>
+                <material find="obsidian" replace="gold block"/>
+            </materials>
+        </phase>
+        <phase id="glass" success-message="{phases.core.glass}" delay="20m">
+            Glass
+            <materials>
+                <material find="gold block" replace="glass"/>
+            </materials>
+        </phase>
+    </phases>
+
+    <zones>
+        <zone modify="never">
+            <region>
+                <invert>
+                    <cuboid min="-116, 0, -17" max="9, 42, 71"/>
+                </invert>
+            </region>
+            <message>{errors.outside-map}</message>
+        </zone>
+        <zone modify="never">
+            <region>
+                <cuboid min="-16, 24, 51" max="0, 35, 62"/>
+            </region>
+            <enter>
+                <team>green</team>
+            </enter>
+        </zone>
+        <zone modify="never">
+            <region>
+                <cuboid min="-107, 24, 51" max="-91, 35, 62"/>
+            </region>
+            <enter>
+                <team>red</team>
+            </enter>
+            <message>{errors.spawn-restricted}</message>
+        </zone>
+    </zones>
+
+    <world>
+      <storm>false</storm>
+      <weather check="always"/>
+    </world>
+
+    <items>
+        <remove-drops>
+            <any>
+                <material>leather helmet</material>
+                <material>leather chestplate</material>
+                <material>iron leggings</material>
+                <material>leather boots</material>
+                <material>bread</material>
+                <material>bucket</material>
+                <material>golden apple</material>
+            </any>
+        </remove-drops>
+        <repair-tools>
+            <any>
+                <material>iron sword</material>
+                <material>bow</material>
+                <material>diamond pickaxe</material>
+                <material>iron axe</material>
+            </any>
+        </repair-tools>
+    </items>
+</map>
