@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map name="venezuelan hacker" spec="1.0.4" version="1.0.0">
+  <include src="Shared/tutorials/koth.xml"/>
+  <include src="defaults.xml"/>
+  <include src="Shared/reward-one-gap.xml"/>
+  <authors>
+    <author uuid="bf3319534f9243ee8abc7544b8234936"/> <!-- Wulfcaspice -->
+  </authors>
+  <teams>
+    <load-group id="teams.red-blue" max="60" min="10"/>
+  </teams>
+  <tutorial>
+    <step countdown="5s" freeze="true" location="-34.5, 10, 51.5" pitch="39" yaw="-32">
+      <chat>
+        <line>^r • {tutorial.generic.team-spawns}</line>
+      </chat>
+    </step>
+    <step countdown="4s" freeze="true" location="-29.5, 11, 37.5" pitch="55" yaw="158">
+      <chat>
+        <line>^r • {tutorial.koth.hill-area}</line>
+      </chat>
+    </step>
+  </tutorial>
+  <spawns>
+    <spawn yaw="-83">
+      <regions>
+        <block>-62, 16, 30</block>
+      </regions>
+    </spawn>
+    <spawn loadout="default" team="red" yaw="180">
+      <regions>
+        <block>-32, 7, 56</block>
+      </regions>
+    </spawn>
+    <spawn loadout="default" team="blue" yaw="0">
+      <regions>
+        <block>-32, 7, 4</block>
+      </regions>
+    </spawn>
+  </spawns>
+  <objectives>
+    <hill capture-time="10s" name="{directions.center}" points="15">
+      <capture>
+        <cylinder base="-32, 3, 30" height="4" radius="4"/>
+      </capture>
+      <progress>
+        <cuboid max="-38, 3, 23" min="-28, 6, 34"/>
+      </progress>
+    </hill>
+    <scores limit="100">
+      <score id="blue-score" team="blue"/>
+      <score id="red-score" team="red"/>
+    </scores>
+  </objectives>
+  <results>
+    <win team="blue">
+      <check>
+        <objective team="blue">blue-score</objective>
+      </check>
+    </win>
+    <win team="red">
+      <check>
+        <objective team="red">red-score</objective>
+      </check>
+    </win>
+  </results>
+  <loadouts>
+    <loadout id="default">
+      <effect duration="5s">damage resistance</effect>
+      <helmet material="leather helmet" team-color="true"/>
+      <chestplate material="leather chestplate" team-color="true"/>
+      <leggings material="leather leggings" team-color="true"/>
+      <boots material="leather boots" team-color="true"/>
+      <item material="iron sword" slot="0"/>
+      <item material="bow" slot="1"/>
+      <item amount="16" material="bread" slot="3"/>
+      <item material="golden apple" slot="2"/>
+      <item amount="8" material="arrow" slot="8"/>
+      <item amount="16" material="ladder" slot="29"/>
+    </loadout>
+  </loadouts>
+  <items>
+    <remove-drops>
+      <any>
+        <material>leather helmet</material>
+        <material>leather chestplate</material>
+        <material>iron leggings</material>
+        <material>leather boots</material>
+        <material>cooked beef</material>
+        <material>arrow</material>
+        <material>golden apple</material>
+      </any>
+    </remove-drops>
+    <repair-tools>
+      <any>
+        <material>iron sword</material>
+        <material>bow</material>
+      </any>
+    </repair-tools>
+  </items>
+  <zones>
+    <zone modify="never">
+      <region>
+        <invert>
+          <cuboid max="-30, 7, 56" min="-30, 7, 56"/>
+        </invert>
+      </region>
+      <message>{errors.outside-map}</message>
+    </zone>
+  </zones>
+  <world>
+    <gamerules>
+      <doDaylightCycle>false</doDaylightCycle>
+    </gamerules>
+  </world>
+</map>

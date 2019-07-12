@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map name="Quarry" version="1.0.0" spec="1.0.0">
+    <include src="defaults.xml"/>
+
+    <authors>
+        <author uuid="d9b4ffbc11d0453aa93f82dc59fca4b6"/> <!-- Wulfcaspice -->
+    </authors>
+
+    <teams>
+        <team id="yellow" color="yellow" min="8" max="10" max-overfill="12">{colors.yellow}</team>
+        <team id="cyan" color="cyan" min="8" max="10" max-overfill="12">{colors.cyan}</team>
+    </teams>
+    <channels team-chat="true" global-chat="false"/>
+    <objectives>
+        <last-team-standing team="yellow"/>
+        <last-team-standing team="cyan"/>
+    </objectives>
+
+    <results>
+       <win scenario="objectives">
+           <check>
+               <time>5m</time>
+           </check>
+       </win>
+   </results>
+
+    <spawns>
+        <spawn yaw="90">
+            <regions>
+                <cuboid min="-40, 4, -44" max="-40, 4, -44"/>
+            </regions>
+        </spawn>
+        <spawn team="yellow" yaw="0" loadout="default">
+            <regions>
+                <cuboid min="-1, 1, -14" max="-1, 1, -14"/>
+            </regions>
+        </spawn>
+        <spawn team="cyan" yaw="180" loadout="default">
+            <regions>
+                <cuboid min="-59, 1, -54" max="-59, 1, -54"/>
+            </regions>
+        </spawn>
+    </spawns>
+
+    <zones>
+        <!-- Boundary -->
+        <zone modify="never">
+            <region>
+                <cuboid min="-64, 21, -84" max="7, -3, 21"/>
+            </region>
+        </zone>
+    </zones>
+
+    <loadouts>
+        <loadout id="default">
+            <effect duration="200s">invisibility</effect>
+            <item slot="0" material="wood sword"/>
+            <item slot="1" material="bow"/>
+            <item slot="2" material="fishing rod"/>
+            <item slot="3" material="golden apple"/>
+            <item slot="4" material="exp bottle" amount="2"/>
+            <item slot="5" material="arrow" amount="4"/>
+            <item slot="7" material="cooked beef" amount="16"/>
+        </loadout>
+    </loadouts>
+    <world>
+        <gamerules>
+            <doDaylightCycle>false</doDaylightCycle>
+        </gamerules>
+    </world>
+    <elimination lives="1"/>
+    <items>
+        <remove-drops>
+            <any>
+                <material>arrow</material>
+                <material>cooked beef</material>
+            </any>
+        </remove-drops>
+
+        <repair-tools>
+            <any>
+                <material>wood sword</material>
+                <material>bow</material>
+                <material>fishing rod</material>
+            </any>
+        </repair-tools>
+    </items>
+</map>

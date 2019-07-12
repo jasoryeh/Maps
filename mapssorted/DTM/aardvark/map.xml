@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map name="Aardvark" version="1.1.0" spec="1.0.0">
+    <include src="defaults.xml"/>
+    <include src="Shared/reward-one-gap.xml"/>
+    <include src="Shared/phases-dtm.xml"/>
+ 
+    <authors>
+        <author uuid="bf3319534f9243ee8abc7544b8234936"/> <!-- Oystervice -->
+    </authors>
+ 
+    <teams>
+        <team id="red" color="red" min="2" max="12" max-overfill="15">{colors.red}</team>
+        <team id="blue" color="blue" min="2" max="12" max-overfill="15">{colors.blue}</team>
+    </teams>
+ 
+    <spawns>
+        <spawn>
+            <regions>
+                <point yaw="-90">-53.5, 11, 44.5</point>
+            </regions>
+        </spawn>
+        <!-- Team spawns -->
+        <spawn team="blue" loadout="default" yaw="0">
+            <regions>
+                <point yaw="0">-43.5, 30, -10.5</point>
+                <point yaw="0">9.5, 30, -10.5</point>
+            </regions>
+        </spawn>
+        <spawn team="red" loadout="default" yaw="-180">
+            <regions>
+                <point yaw="-180">9.5, 30, 98.5</point>
+                <point yaw="-180">-43.5, 30, 98.5</point>
+            </regions>
+        </spawn>
+    </spawns>
+ 
+    <objectives>
+        <monuments destroyable="true" owner="red" materials="obsidian" first-phase="gold">
+            <monument name="{directions.left}">
+                <region>
+                    <cuboid min="-35, 9, 77" max="-35, 8, 77"/>
+                </region>
+            </monument>
+            <monument name="{directions.right}">
+                <region>
+                    <cuboid min="1, 9, 77" max="1, 8, 77"/>
+                </region>
+            </monument>
+        </monuments>
+        <monuments destroyable="true" owner="blue" materials="obsidian" first-phase="gold">
+            <monument name="{directions.left}">
+                <region>
+                    <cuboid min="1, 9, 11" max="1, 8, 11"/>
+                </region>
+            </monument>
+            <monument name="{directions.right}">
+                <region>
+                    <cuboid min="-35, 9, 11" max="-35, 8, 11"/>
+                </region>
+            </monument>
+        </monuments>
+    </objectives>
+ 
+    <loadouts>
+        <loadout id="default">
+            <helmet material="leather helmet" team-color="true"/>
+            <chestplate material="leather chestplate" team-color="true"/>
+            <boots material="leather boots" team-color="true"/>           
+            <item slot="0" material="stone sword"/>
+            <item slot="1" material="bow">
+              <enchantment>arrow infinite</enchantment>
+            </item>
+            <item slot="2" material="diamond pickaxe"/>
+            <item slot="3" material="golden apple" amount="2"/>
+            <item slot="4" material="sandstone" amount="32"/>
+            <item slot="5" material="log" damage="1" amount="16"/>
+            <item slot="6" material="iron spade"/>
+            <item slot="7" material="golden carrot" amount="32"/>
+            <item slot="28" material="arrow" amount="1"/>
+        </loadout>
+        <loadout id="kill-reward">
+            <item material="golden apple"/>
+        </loadout>
+    </loadouts>
+
+    <world>
+      <storm>false</storm>
+      <weather check="always"/>
+    </world>
+    
+    <gamerules>
+       <doDaylightCycle>false</doDaylightCycle>
+    </gamerules>
+  
+    <kills>
+        <rewards>
+            <reward loadout="kill-reward"/>
+        </rewards>
+    </kills>
+  
+    <zones>
+        <zone modify="never">
+            <region>
+                <invert><cuboid min="-46, 0, -13" max="12, 16, 101"/></invert>
+            </region>
+        </zone>
+        <zone modify="never">
+            <region>
+                <cuboid min="5, 10, 94" max="11, 31, 100"/>
+            </region>
+            <message>{errors.spawn-restricted}</message>
+        </zone>
+        <zone modify="never">
+            <region>
+                <cuboid min="-39, 10, 94" max="-45, 31, 100"/>
+            </region>
+            <message>{errors.spawn-restricted}</message>
+        </zone>
+        <zone modify="never">
+            <region>
+                <cuboid min="-39, 10, -6" max="-45, 31, -21"/>
+            </region>
+            <message>{errors.spawn-restricted}</message>
+        </zone>
+        <zone modify="never">
+            <region>
+                <cuboid min="5, 10, -6" max="11, 31, -12"/>
+            </region>
+            <message>{errors.spawn-restricted}</message>
+        </zone>
+    </zones>
+ 
+    <items>
+        <remove-drops>
+            <any>
+                <material>leather helmet</material>
+                <material>gold chestplate</material>
+                <material>leather boots</material>
+                <material>golden carrot</material>
+                <material>sandstone</material>
+                <material>wood</material>
+                <material>log</material>
+                <material>bucket</material>
+                <material>arrow</material>               
+            </any>
+        </remove-drops>
+        <repair-tools>
+            <any>
+                <material>stone sword</material>
+                <material>bow</material>
+                <material>diamond pickaxe</material>
+                <material>iron spade</material>                
+            </any>
+        </repair-tools>
+    </items>
+</map>
