@@ -87,12 +87,16 @@
             <any>
                 <material>leather helmet</material>
                 <material>leather chestplate</material>
-                <material>iron leggings</material>
+                <material>leather leggings</material>
                 <material>leather boots</material>
                 <material>cooked beef</material>
                 <material>arrow</material>
-                <material>iron sword</material>
+                <material>stone sword</material>
                 <material>golden apple</material>
+                <material>stone pickaxe</material>
+                <material>stone axe</material>
+                <material>stone spade</material>
+                <material>stone pickaxe</material>
             </any>
         </remove-drops>
         <repair-tools>
