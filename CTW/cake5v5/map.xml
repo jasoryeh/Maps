@@ -168,6 +168,7 @@
     <zone modify="never">
             <region>
                 <subtract>
+		    <cuboid max="4,13,73" min="-2,11,73"/>
                     <block>4,12,73</block>
                     <block>-2,12,73</block>
                 </subtract>
@@ -177,6 +178,7 @@
         <zone modify="never">
             <region>
                 <subtract>
+		    <cuboid max="-4,13,-69" min="2,11,-69"/>
                     <block>-4,12,-69</block>
                     <block>2,12,-69</block>
                 </subtract>
