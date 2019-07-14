@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <map name="Croatia" version="1.0.0" spec="1.0.0">
 <include src="defaults.xml"/>
 <include src="Shared/reward-one-gap.xml"/>
