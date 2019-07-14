@@ -70,6 +70,17 @@
     </loadout>
   </loadouts>
   <zones>
+    <zone break="allow-gold-block" modify="never" water-rule="no-flow">
+      <region>
+        <invert>
+          <block>-4, 12, 69</block>
+	  <block>2, 12, 69</block>
+	  <block>4, 12, 73</block>
+	  <block>-2, 12, 73</block>
+        </invert>
+      </region>
+      <message>{errors.outside-map}</message>
+    </zone>
     <zone modify="never">
       <region>
         <subtract>
