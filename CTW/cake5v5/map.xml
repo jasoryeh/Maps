@@ -165,6 +165,24 @@
       </enter>
       <message>{errors.own-wool-room}</message>
     </zone>
+    <zone modify="never">
+            <region>
+                <subtract>
+                    <block>4,12,73</block>
+                    <block>-2,12,73</block>
+                </subtract>
+            </region>
+            <message>{errors.spawn-restricted}</message>
+        </zone>
+        <zone modify="never">
+            <region>
+                <subtract>
+                    <block>-4,12,-69</block>
+                    <block>2,12,-69</block>
+                </subtract>
+            </region>
+            <message>{errors.spawn-restricted}</message>
+        </zone>
     <zone>
       <region>
         <join>
