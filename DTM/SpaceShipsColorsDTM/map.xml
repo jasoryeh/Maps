@@ -37,7 +37,7 @@
                     <region><block>91,48,176</block></region>
                 </monument>
                 <monument name="Center">
-                    <region><block>-60,46,112</block></region>
+                    <region><block>60,46,112</block></region>
                 </monument>
                 <monument name="Left">
                     <region><block>91,48,48</block></region>
