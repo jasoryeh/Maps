@@ -10,6 +10,10 @@
         <team id="blue-team" color="blue" min="3" max="5">Blue</team>
         <team id="red-team" color="red" min="3" max="5">Red</team>
     </teams>
+    <checks>
+        <team id="only-blue">blue-team</team>
+        <team id="only-red">red-team</team>
+    </checks>
     <loadouts>
         <loadout id="main-kit">
             <clear />
@@ -53,9 +57,11 @@
         <cylinder id="indicator-north" base="39.5,11,-333.5" radius="4" height="2" />
         <cylinder id="indicator-mid" base="39.5,0,-304.5" radius="4" height="2" />
         <cylinder id="indicator-south" base="39.5,11,-275.5" radius="4" height="2" />
-        <apply region="south-pad" velocity="0,1.9,-0.3" />
-        <apply region="north-pad" velocity="0,1.9,0.3" />
+        <!-- Pads? <apply region="south-pad" velocity="0,1.9,-0.3" />-->
+        <!-- Pads? <apply region="north-pad" velocity="0,1.9,0.3" />-->
     </regions>
+	<zones enter="only-red" velocity="0,1.9,-0.3" region="south-pad" />
+	<zones enter="only-blue" velocity="0,1.9,0.3" region="north-pad" />
     <objectives>
         <hills depreciate="false" capture-time="5s" points="3.25">
             <hill name="North" progress="indicator-north" captured="indicator-north" capture="capture-north" />

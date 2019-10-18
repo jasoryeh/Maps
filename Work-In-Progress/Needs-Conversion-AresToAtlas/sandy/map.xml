@@ -12,6 +12,10 @@
         <team id="blue-team" color="blue" min="3" max="5" max-overfill="5">Blue</team>
         <team id="red-team" color="red" min="3" max="5" max-overfill="5">Red</team>
     </teams>
+    <checks>
+        <team id="only-blue">blue-team</team>
+        <team id="only-red">red-team</team>
+    </checks>
     <loadouts>
         <loadout id="spawn-kit">
             <clear />
@@ -30,6 +34,10 @@
         <loadout id="red-kit" parents="spawn-kit">
             <helmet unbreakable="true" color="#cd0000" material="leather helmet" />
             <leggings unbreakable="true" color="#cd0000" material="leather leggings" />
+        </loadout>
+        <loadout id="kill-reward">
+            <item amount="8" material="arrow" />
+            <item material="golden apple" />
         </loadout>
     </loadouts>
     <spawns respawn-delay="5s" respawn-blindness="true">

@@ -62,7 +62,7 @@
         <cylinder id="indicator-b" base="-23.5,42,0.5" radius="4" height="2" />
     </regions>
     <objectives>
-        <hills depreciate="false" required="false" capture-time="5s" points="3.25">
+        <hills depreciate="false" required="false" capture-time="5s" points="3">
             <hill name="Point A" progress="indicator-a" capture="capture-a" />
             <hill name="The Asylum" progress="indicator-mid" capture="capture-mid" />
             <hill name="Point B" progress="indicator-b" capture="capture-b" />
