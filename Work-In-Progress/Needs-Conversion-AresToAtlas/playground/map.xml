@@ -67,25 +67,25 @@
                     <cylinder base="27.5,30,-29.5" radius="5" height="4" />
                 </capture>
                 <progress>
-                    <cylinder base="27.5,30,-29.5" radius="4.5" height="1" />
+                    <cylinder base="27.5,30,-29.5" radius="4" height="1" />
                 </progress>
                 <!--<captured><union id="a-captured-region"><cylinder base="27.5,30,-29.5" radius="4.5" height="1"/><cuboid min="25,58,-27" max="30,52,-32"/></union></captured>-->
             </hill>
             <hill name="Sandbox" neutral-state="true" required="false" capture-time="5s" points="1">
                 <capture>
-                    <cylinder base="8.5,23,-10.5" radius="4.5" height="4" />
+                    <cylinder base="8.5,23,-10.5" radius="5" height="4" />
                 </capture>
                 <progress>
-                    <cylinder base="8.5,23,-10.5" radius="4.5" height="1" />
+                    <cylinder base="8.5,23,-10.5" radius="4" height="1" />
                 </progress>
                 <!--<captured><cuboid min="2,27,-4" max="15,22,-17"/></captured>-->
             </hill>
             <hill name="Roundabout" neutral-state="true" required="false" capture-time="5s" points="1">
                 <capture>
-                    <cylinder base="-9.5,32,7.5" radius="4.5" height="4" />
+                    <cylinder base="-9.5,32,7.5" radius="5" height="4" />
                 </capture>
                 <progress>
-                    <cylinder base="-9.5,32,7.5" radius="4.5" height="1" />
+                    <cylinder base="-9.5,32,7.5" radius="4" height="1" />
                 </progress>
                 <!--<captured><cylinder base="-9.5,32,7.5" radius="4.5" height="25"/></captured>-->
             </hill>

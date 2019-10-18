@@ -65,10 +65,6 @@
             <item material="golden apple" />
         </loadout>
     </loadouts>
-    <checks>
-        <team id="only-blue">blue</team>
-        <team id="only-red">red</team>
-    </checks>
     <zones>
         <load-group id="no-build"/>
     </zones>

@@ -35,6 +35,10 @@
             <helmet unbreakable="true" color="#cd0000" material="leather helmet" />
             <leggings unbreakable="true" color="#cd0000" material="leather leggings" />
         </loadout>
+        <loadout id="kill-reward">
+            <item amount="8" material="arrow" />
+            <item material="golden apple" />
+        </loadout>
     </loadouts>
     <spawns respawn-delay="3.5s">
         <spawn yaw="180" region="spawn-default" />
