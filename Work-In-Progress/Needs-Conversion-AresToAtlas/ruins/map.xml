@@ -1,85 +1,91 @@
-<map proto="1.4.2">
-<name>Ruins</name>
-<version>1.0.1</version>
-<objective>Be the first team to reach 2500 points!</objective>
-<authors>
-	<author uuid="a63de09d-6fa9-436f-9070-26f5e9a4d27b"/> <!-- dragonrider455 -->
-</authors>
-<teams>
-    <team id="blue-team" color="blue" 	  max="5">Blue</team>
-    <team id="red-team"  color="dark red" max="5">Red</team>
-</teams>
-<kits>
-    <kit id="main-kit">
-        <clear />
-        <item slot="0" unbreakable="true" material="stone sword"/>
-        <item slot="1" unbreakable="true" material="bow"/>
-        <item slot="8" amount="16"        material="arrow"/>
-				<item slot="7" material="golden apple"/>
-        <chestplate unbreakable="true"    material="chainmail chestplate"/>
-        <boots      unbreakable="true"    material="iron boots"/>
-        <effect duration="4" amplifier="10">resistance</effect>
-        <effect duration="4" amplifier="10">regeneration</effect>
-        <game-mode>adventure</game-mode>
-    </kit>
-    <kit id="blue-kit" parents="main-kit">
-        <helmet   unbreakable="true" color="0066cc" material="leather helmet"/>
-        <leggings unbreakable="true" color="0066cc" material="leather leggings"/>
-    </kit>
-    <kit id="red-kit" parents="main-kit">
-        <helmet   unbreakable="true" color="cd0000" material="leather helmet"/>
-        <leggings unbreakable="true" color="cd0000" material="leather leggings"/>
-    </kit>
-</kits>
-<spawns>
-    <default yaw="180" region="spawn-default"/>
-    <spawn team="blue-team" kit="blue-kit" yaw="-90"  region="spawn-blue"/>
-    <spawn team="red-team"  kit="red-kit"  yaw="90" region="spawn-red"/>
-</spawns>
-<filters>
-    <team id="only-blue">blue-team</team>
-    <team id="only-red">red-team</team>
-</filters>
-<regions>
-	<point    id="spawn-default">39,1.5,-304</point>
-	<point    id="spawn-red"	>97,9,-304</point>
-	<point    id="spawn-blue"   >-18,9,-304</point>
-    <cylinder id="south-pad" base="39.5,1,-255.5" radius="1.5" height="1"/>
-    <cylinder id="north-pad" base="39.5,1,-353.5" radius="1.5" height="1"/>
-    <cuboid   id="capture-north" min="43,12,-337" max="36,14,-330"/>
-    <cuboid   id="capture-mid" min="36,1,-308"   max="43,4,-301"/>
-    <cuboid   id="capture-south" min="36,12,-272" max="43,14,-279"/>
-    <cylinder id="indicator-north" base="39.5,11,-333.5"  radius="4" height="2"/>
-    <cylinder id="indicator-mid" base="39.5,0,-304.5"   radius="4" height="2"/>
-    <cylinder id="indicator-south" base="39.5,11,-275.5" radius="4" height="2"/>
-	<apply block="never"/>
-    <apply region="south-pad" velocity="0,1.9,-0.3"/>
-    <apply region="north-pad" velocity="0,1.9,0.3"/>
-</regions>
-<control-points incremental="true" show-progress="true" neutral-state="true" required="false" capture-time="5s" points="3.25">
-    <control-point name="North"     progress="indicator-north" captured="indicator-north" capture="capture-north"/>
-    <control-point name="Middle"  progress="indicator-mid" captured="indicator-mid" capture="capture-mid"/>
-    <control-point name="South"  progress="indicator-south" captured="indicator-south" capture="capture-south"/>
-</control-points>
-<kill-reward>
-    <item amount="8" material="arrow"/>
-    <item            material="golden apple"/>
-</kill-reward>
-<toolrepair>
-	<tool>stone sword</tool>
-	<tool>bow</tool>
-</toolrepair>
-<itemremove>
-    <item>leather helmet</item>
-    <item>chainmail chestplate</item>
-    <item>leather leggings</item>
-    <item>iron boots</item>
-</itemremove>
-<score>
-	<limit>2500</limit>
-</score>
-<hunger>
-    <depletion>off</depletion>
-</hunger>
-<respawn delay="3.5s"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<map name="Ruins" version="1.0.1" spec="1.0.6" proto="1.4.2">
+    <!--<objective>Be the first team to reach 2500 points!</objective>-->
+    <authors>
+        <author uuid="a63de09d-6fa9-436f-9070-26f5e9a4d27b" />
+        <!-- dragonrider455 -->
+    </authors>
+    <teams>
+        <team id="blue-team" color="blue" max="5">Blue</team>
+        <team id="red-team" color="red" max="5">Red</team>
+    </teams>
+    <loadouts>
+        <loadout id="main-kit">
+            <clear />
+            <item slot="0" unbreakable="true" material="stone sword" />
+            <item slot="1" unbreakable="true" material="bow" />
+            <item slot="8" amount="16" material="arrow" />
+            <item slot="7" material="golden apple" />
+            <chestplate unbreakable="true" material="chainmail chestplate" />
+            <boots unbreakable="true" material="iron boots" />
+            <effect duration="4s" amplifier="10">resistance</effect>
+            <effect duration="4s" amplifier="10">regeneration</effect>
+            <game-mode>adventure</game-mode>
+        </loadout>
+        <loadout id="blue-kit" parents="main-kit">
+            <helmet unbreakable="true" color="#0066cc" material="leather helmet" />
+            <leggings unbreakable="true" color="#0066cc" material="leather leggings" />
+        </loadout>
+        <loadout id="red-kit" parents="main-kit">
+            <helmet unbreakable="true" color="#cd0000" material="leather helmet" />
+            <leggings unbreakable="true" color="#cd0000" material="leather leggings" />
+        </loadout>
+    </loadouts>
+    <spawns respawn-delay="3.5s">
+        <spawn yaw="180" region="spawn-default" />
+        <spawn team="blue-team" kit="blue-kit" yaw="-90" region="spawn-blue" />
+        <spawn team="red-team" kit="red-kit" yaw="90" region="spawn-red" />
+    </spawns>
+    <filters>
+        <team id="only-blue">blue-team</team>
+        <team id="only-red">red-team</team>
+    </filters>
+    <regions>
+        <point id="spawn-default">39,1.5,-304</point>
+        <point id="spawn-red">97,9,-304</point>
+        <point id="spawn-blue">-18,9,-304</point>
+        <cylinder id="south-pad" base="39.5,1,-255.5" radius="1.5" height="1" />
+        <cylinder id="north-pad" base="39.5,1,-353.5" radius="1.5" height="1" />
+        <cuboid id="capture-north" min="43,12,-337" max="36,14,-330" />
+        <cuboid id="capture-mid" min="36,1,-308" max="43,4,-301" />
+        <cuboid id="capture-south" min="36,12,-272" max="43,14,-279" />
+        <cylinder id="indicator-north" base="39.5,11,-333.5" radius="4" height="2" />
+        <cylinder id="indicator-mid" base="39.5,0,-304.5" radius="4" height="2" />
+        <cylinder id="indicator-south" base="39.5,11,-275.5" radius="4" height="2" />
+        <apply block="never" />
+        <apply region="south-pad" velocity="0,1.9,-0.3" />
+        <apply region="north-pad" velocity="0,1.9,0.3" />
+    </regions>
+    <objectives>
+        <hills incremental="true" show-progress="true" neutral-state="true" required="false" capture-time="5s" points="3.25">
+            <hill name="North" progress="indicator-north" captured="indicator-north" capture="capture-north" />
+            <hill name="Middle" progress="indicator-mid" captured="indicator-mid" capture="capture-mid" />
+            <hill name="South" progress="indicator-south" captured="indicator-south" capture="capture-south" />
+            <scores limit="2500">
+                <score id="bscore" team="blue-team" />
+                <score id="rscore" team="red-team" />
+            </scores>
+        </hills>
+    </objectives>
+    <kills>
+        <rewards>
+            <reward loadout="kill-reward" />
+        </rewards>
+    </kills>
+    <items>
+        <remove-drops>
+            <any>
+                <item>leather helmet</item>
+                <item>chainmail chestplate</item>
+                <item>leather leggings</item>
+                <item>iron boots</item>
+            </any>
+        </remove-drops>
+        <repair-tools>
+            <any>
+                <tool>stone sword</tool>
+                <tool>bow</tool>
+            </any>
+        </repair-tools>
+    </items>
 </map>

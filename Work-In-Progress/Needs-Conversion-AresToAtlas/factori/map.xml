@@ -20,8 +20,8 @@
         <team id="red" color="red" max="5">Red</team>
         <team id="blue" color="blue" max="5">Blue</team>
     </teams>
-    <spawns>
-        <spawn respawn-delay="5s">
+    <spawns respawn-delay="5s">
+        <spawn>
             <regions yaw="90">
                 <point>-24,27,-31.5</point>
             </regions>
