@@ -21,7 +21,7 @@
             <item slot="7" material="golden apple" />
             <chestplate unbreakable="true" material="chainmail chestplate" />
             <boots unbreakable="true" material="iron boots" />
-            <effect duration="4s" amplifier="10">resistance</effect>
+            <effect duration="4s" amplifier="10">damage resistance</effect>
             <effect duration="4s" amplifier="10">regeneration</effect>
         </loadout>
         <loadout id="blue-kit" parents="main-kit">

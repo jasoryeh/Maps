@@ -48,12 +48,12 @@
             <boots unbreakable="true" material="iron boots" />
         </loadout>
         <loadout id="red-kit" parents="spawn">
-            <helmet color="#cd0000" unbreakable="true">leather helmet</helmet>
-            <leggings color="#cd0000" unbreakable="true">leather leggings</leggings>
+            <helmet color="#cd0000" unbreakable="true" material="leather helmet" />
+            <leggings color="#cd0000" unbreakable="true" material="leather leggings" />
         </loadout>
         <loadout id="blue-kit" parents="spawn">
-            <helmet color="#0066cc" unbreakable="true">leather helmet</helmet>
-            <leggings color="#0066cc" unbreakable="true">leather leggings</leggings>
+            <helmet color="#0066cc" unbreakable="true" material="leather helmet" />
+            <leggings color="#0066cc" unbreakable="true" material="leather leggings" />
         </loadout>
         <loadout id="kill-reward">
             <item amount="8" material="arrow" />
