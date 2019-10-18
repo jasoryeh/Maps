@@ -75,16 +75,16 @@
     <items>
         <remove-drops>
             <any>
-                <item>leather helmet</item>
-                <item>chainmail chestplate</item>
-                <item>leather leggings</item>
-                <item>iron boots</item>
+                <material>leather helmet</material>
+                <material>chainmail chestplate</material>
+                <material>leather leggings</material>
+                <material>iron boots</material>
             </any>
         </remove-drops>
         <repair-tools>
             <any>
-                <tool>stone sword</tool>
-                <tool>bow</tool>
+                <material>stone sword</material>
+                <material>bow</material>
             </any>
         </repair-tools>
     </items>
