@@ -67,7 +67,7 @@
 	<zones enter="only-red" velocity="0,1.9,-0.3" region="south-pad" />
 	<zones enter="only-blue" velocity="0,1.9,0.3" region="north-pad" />
     <objectives>
-        <hills depreciate="false" capture-time="5s" points="3.25">
+        <hills depreciate="false" capture-time="5s" points="3">
             <hill name="North" progress="indicator-north" captured="indicator-north" capture="capture-north" />
             <hill name="Middle" progress="indicator-mid" captured="indicator-mid" capture="capture-mid" />
             <hill name="South" progress="indicator-south" captured="indicator-south" capture="capture-south" />
