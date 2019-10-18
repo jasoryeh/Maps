@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map name="Factori" version="1.1.0" spec="1.0.6" proto="1.4.2" genre="koth">
+    <include src="defaults.xml"/>
     <gametype>hill</gametype>
     <!--<objective>Be the first team to reach 750 points!</objective>-->
     <authors>
@@ -65,9 +66,7 @@
         <team id="only-red">red</team>
     </checks>
     <zones>
-        <zone modify="never">
-            <everywhere />
-        </zone>
+        <load-group id="no-build"/>
     </zones>
     <hills depreciate="false">
         <hill name="Point A" neutral-state="true" required="false" capture-time="5s" points="1">

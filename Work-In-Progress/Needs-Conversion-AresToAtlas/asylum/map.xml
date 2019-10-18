@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map name="Asylum" version="1.0.5" spec="1.0.6" proto="1.4.2">
+    <include src="defaults.xml"/>
     <!--<objective>Be the first team to reach 2500 points!</objective>-->
     <authors>
         <author uuid="a63de09d-6fa9-436f-9070-26f5e9a4d27b" />
@@ -47,9 +48,7 @@
         <team id="only-red">red-team</team>
     </checks>
     <zones>
-        <zone modify="nobody">
-            <everywhere />
-        </zone>
+        <load-group id="no-build"/>
     </zones>
     <regions>
         <point id="spawn-default">7.5, 53.5, 0.5</point>

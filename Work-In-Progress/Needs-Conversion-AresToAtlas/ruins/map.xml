@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map name="Ruins" version="1.0.1" spec="1.0.6" proto="1.4.2">
+    <include src="defaults.xml"/>
     <!--<objective>Be the first team to reach 2500 points!</objective>-->
     <authors>
         <author uuid="a63de09d-6fa9-436f-9070-26f5e9a4d27b" />
@@ -52,7 +53,6 @@
         <cylinder id="indicator-north" base="39.5,11,-333.5" radius="4" height="2" />
         <cylinder id="indicator-mid" base="39.5,0,-304.5" radius="4" height="2" />
         <cylinder id="indicator-south" base="39.5,11,-275.5" radius="4" height="2" />
-        <apply block="never" />
         <apply region="south-pad" velocity="0,1.9,-0.3" />
         <apply region="north-pad" velocity="0,1.9,0.3" />
     </regions>

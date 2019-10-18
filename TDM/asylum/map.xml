@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map name="Asylum" spec="1.0.0" version="1.0.0">
+<map name="Asylum LTS" spec="1.0.0" version="1.0.0">
   <include src="defaults.xml"/>
   <authors>
     <author uuid="68cfe240d81c46ae8a939e3eb5d71e3e"/> <!-- Myv -->

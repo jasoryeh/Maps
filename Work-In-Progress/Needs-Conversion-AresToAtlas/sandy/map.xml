@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map name="Sandy" version="1.0.0" spec="1.0.6" proto="1.4.3">
+    <include src="defaults.xml"/>
     <!--<objective>Be the first to 750 points</objective>-->
     <authors>
         <author uuid="9116d3fa-1400-4ada-aecd-2eae1d73e383" />
@@ -122,8 +123,6 @@
         </repair-tools>
     </items>
     <zones>
-        <zone modify="never">
-            <everywhere />
-        </zone>
+        <load-group id="no-build"/>
     </zones>
 </map>
