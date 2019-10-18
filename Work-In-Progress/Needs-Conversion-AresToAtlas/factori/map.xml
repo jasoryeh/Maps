@@ -17,7 +17,7 @@
         <doDayLightCycle>false</doDayLightCycle>
     </gamerules>
     <teams>
-        <team id="red" color="dark red" max="5">Red</team>
+        <team id="red" color="red" max="5">Red</team>
         <team id="blue" color="blue" max="5">Blue</team>
     </teams>
     <spawns>
@@ -97,8 +97,8 @@
             <!--<captured><cuboid min="-35,29,-11" max="-30,23,-12"/></captured>-->
         </hill>
         <scores limit="750">
-            <score id="bscore" team="blue-team" />
-            <score id="rscore" team="red-team" />
+            <score id="bscore" team="blue" />
+            <score id="rscore" team="red" />
         </scores>
     </hills>
     <kills>
