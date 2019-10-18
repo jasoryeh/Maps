@@ -23,7 +23,7 @@
             <effect duration="4s" amplifier="10">regeneration</effect>
         </loadout>
         <loadout id="blue-kit" parents="spawn-kit">
-            <helmet unbreakable="true" color="#" material="leather helmet" />
+            <helmet unbreakable="true" color="#0066cc" material="leather helmet" />
             <leggings unbreakable="true" color="#0066cc" material="leather leggings" />
         </loadout>
         <loadout id="red-kit" parents="spawn-kit">

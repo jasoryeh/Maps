@@ -44,8 +44,8 @@
         <point id="spawn-default">39,1.5,-304</point>
         <point id="spawn-red">97,9,-304</point>
         <point id="spawn-blue">-18,9,-304</point>
-        <cylinder id="south-pad" base="39.5,1,-255.5" radius="1.5" height="1" />
-        <cylinder id="north-pad" base="39.5,1,-353.5" radius="1.5" height="1" />
+        <cylinder id="south-pad" base="39.5,1,-255.5" radius="2" height="1" />
+        <cylinder id="north-pad" base="39.5,1,-353.5" radius="2" height="1" />
         <cuboid id="capture-north" min="43,12,-337" max="36,14,-330" />
         <cuboid id="capture-mid" min="36,1,-308" max="43,4,-301" />
         <cuboid id="capture-south" min="36,12,-272" max="43,14,-279" />
