@@ -62,7 +62,7 @@
         </zone>
     </zones>
     <objectives>
-        <hills incremental="true" show-progress="true">
+        <hills depreciate="false">
             <hill name="Castle" neutral-state="true" required="false" capture-time="5s" points="1">
                 <capture>
                     <cylinder base="27.5,30,-29.5" radius="4.5" height="4" />

@@ -57,7 +57,7 @@
         <apply region="north-pad" velocity="0,1.9,0.3" />
     </regions>
     <objectives>
-        <hills incremental="true" show-progress="true" neutral-state="true" required="false" capture-time="5s" points="3.25">
+        <hills depreciate="false" capture-time="5s" points="3.25">
             <hill name="North" progress="indicator-north" captured="indicator-north" capture="capture-north" />
             <hill name="Middle" progress="indicator-mid" captured="indicator-mid" capture="capture-mid" />
             <hill name="South" progress="indicator-south" captured="indicator-south" capture="capture-south" />
