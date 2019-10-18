@@ -8,8 +8,8 @@
         <!--Fouled-->
     </authors>
     <teams>
-        <team id="blue-team" color="blue" max="5" max-overfill="5">Blue</team>
-        <team id="red-team" color="red" max="5" max-overfill="5">Red</team>
+        <team id="blue-team" color="blue" min="3" max="5" max-overfill="5">Blue</team>
+        <team id="red-team" color="red" min="3" max="5" max-overfill="5">Red</team>
     </teams>
     <loadouts>
         <loadout id="main-kit">

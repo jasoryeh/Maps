@@ -17,8 +17,8 @@
         <doDayLightCycle>false</doDayLightCycle>
     </gamerules>
     <teams>
-        <team id="red" color="red" max="5">Red</team>
-        <team id="blue" color="blue" max="5">Blue</team>
+        <team id="red" color="red" min="3" max="5">Red</team>
+        <team id="blue" color="blue" min="3" max="5">Blue</team>
     </teams>
     <spawns respawn-delay="5s">
         <spawn>
