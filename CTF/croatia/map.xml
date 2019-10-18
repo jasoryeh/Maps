@@ -3,7 +3,7 @@
 <include src="defaults.xml"/>
 <include src="Shared/reward-one-gap.xml"/>
   <authors>
-    <author uuid="63b88dff-c6b4-4e08-bd17-aae089b12e9" role="The author of the map."/> <!--  RiloS_  -->
+    <author uuid="63b88dff-c6b4-4e08-bd17-aae089b12e95" role="The author of the map."/> <!--  RiloS_  -->
   </authors>
   <teams>
     <team id="red" color="red" min="2" max="20" max-overfill="25">{colors.red}</team>
