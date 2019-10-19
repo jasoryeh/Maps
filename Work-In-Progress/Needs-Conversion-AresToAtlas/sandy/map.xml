@@ -27,11 +27,11 @@
             <effect duration="4s" amplifier="10">damage resistance</effect>
             <effect duration="4s" amplifier="10">regeneration</effect>
         </loadout>
-        <loadout id="blue-kit" parents="spawn-kit">
+        <loadout id="blue-kit" parent="spawn-kit">
             <helmet unbreakable="true" color="#0066cc" material="leather helmet" />
             <leggings unbreakable="true" color="#0066cc" material="leather leggings" />
         </loadout>
-        <loadout id="red-kit" parents="spawn-kit">
+        <loadout id="red-kit" parent="spawn-kit">
             <helmet unbreakable="true" color="#cd0000" material="leather helmet" />
             <leggings unbreakable="true" color="#cd0000" material="leather leggings" />
         </loadout>
@@ -59,7 +59,7 @@
     </spawns>
     <objectives>
         <hills depreciate="false">
-            <hill name="Point A" capture-time="5s" points="1" ignored-blocks="wool">
+            <hill name="Point A" capture-time="5s" points="1" ignored-blocks="wool" earn-points="always">
                 <capture>
                     <cuboid min="-889,152,-691" max="-895,156,-685" />
                 </capture>
@@ -72,7 +72,7 @@
             <cuboid min="-887,152,-696" max="-896,173,-693" />		
         </captured>-->
             </hill>
-            <hill name="Point B" capture-time="5s" points="1" ignored-blocks="wool">
+            <hill name="Point B" capture-time="5s" points="1" ignored-blocks="wool" earn-points="always">
                 <capture>
                     <cuboid min="-888,152,-639" max="-895,156,-645" />
                 </capture>
@@ -85,7 +85,7 @@
             <cuboid min="-887,152,-636" max="-896,173,-633" />
         </captured>-->
             </hill>
-            <hill name="Middle" capture-time="5s" points="1" ignored-blocks="wool">
+            <hill name="Middle" capture-time="5s" points="1" ignored-blocks="wool" earn-points="always">
                 <capture>
                     <cuboid min="-889,144,-662" max="-895,148,-668" />
                 </capture>

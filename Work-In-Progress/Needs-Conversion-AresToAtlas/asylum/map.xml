@@ -25,11 +25,11 @@
             <effect duration="4s" amplifier="10">damage resistance</effect>
             <effect duration="4s" amplifier="10">regeneration</effect>
         </loadout>
-        <loadout id="blue-kit" parents="main-kit">
+        <loadout id="blue-kit" parent="main-kit">
             <helmet unbreakable="true" color="#0066cc" material="leather helmet" />
             <leggings unbreakable="true" color="#0066cc" material="leather leggings" />
         </loadout>
-        <loadout id="red-kit" parents="main-kit">
+        <loadout id="red-kit" parent="main-kit">
             <helmet unbreakable="true" color="#cd0000" material="leather helmet" />
             <leggings unbreakable="true" color="#cd0000" material="leather leggings" />
         </loadout>
@@ -63,9 +63,9 @@
     </regions>
     <objectives>
         <hills depreciate="false" required="false" capture-time="5s" points="3">
-            <hill name="Point A" progress="indicator-a" capture="capture-a" />
-            <hill name="The Asylum" progress="indicator-mid" capture="capture-mid" />
-            <hill name="Point B" progress="indicator-b" capture="capture-b" />
+            <hill name="Point A" progress="indicator-a" capture="capture-a" earn-points="always" />
+            <hill name="The Asylum" progress="indicator-mid" capture="capture-mid" earn-points="always" />
+            <hill name="Point B" progress="indicator-b" capture="capture-b" earn-points="always" />
         </hills>
         <scores limit="2500">
             <score id="bscore" team="blue-team" />

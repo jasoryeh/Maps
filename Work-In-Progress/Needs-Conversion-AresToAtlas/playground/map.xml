@@ -23,11 +23,11 @@
             <effect duration="4s" amplifier="10">damage resistance</effect>
             <effect duration="4s" amplifier="10">regeneration</effect>
         </loadout>
-        <loadout id="blue-kit" parents="main-kit">
+        <loadout id="blue-kit" parent="main-kit">
             <helmet unbreakable="true" color="#0066cc" material="leather helmet" />
             <leggings unbreakable="true" color="#0066cc" material="leather leggings" />
         </loadout>
-        <loadout id="red-kit" parents="main-kit">
+        <loadout id="red-kit" parent="main-kit">
             <helmet unbreakable="true" color="#cd0000" material="leather helmet" />
             <leggings unbreakable="true" color="#cd0000" material="leather leggings" />
         </loadout>
@@ -62,7 +62,7 @@
     </zones>
     <objectives>
         <hills depreciate="false">
-            <hill name="Castle" neutral-state="true" required="false" capture-time="5s" points="1" ignored-blocks="wool">
+            <hill name="Castle" neutral-state="true" required="false" capture-time="5s" points="1" ignored-blocks="wool" earn-points="always">
                 <capture>
                     <cylinder base="27,30,-30" radius="5" height="4" />
                 </capture>
@@ -71,7 +71,7 @@
                 </progress>
                 <!--<captured><union id="a-captured-region"><cylinder base="27.5,30,-29.5" radius="4.5" height="1"/><cuboid min="25,58,-27" max="30,52,-32"/></union></captured>-->
             </hill>
-            <hill name="Sandbox" neutral-state="true" required="false" capture-time="5s" points="1" ignored-blocks="wool">
+            <hill name="Sandbox" neutral-state="true" required="false" capture-time="5s" points="1" ignored-blocks="wool" earn-points="always">
                 <capture>
                     <cylinder base="8,23,-11" radius="5" height="4" />
                 </capture>
@@ -80,7 +80,7 @@
                 </progress>
                 <!--<captured><cuboid min="2,27,-4" max="15,22,-17"/></captured>-->
             </hill>
-            <hill name="Roundabout" neutral-state="true" required="false" capture-time="5s" points="1" ignored-blocks="wool">
+            <hill name="Roundabout" neutral-state="true" required="false" capture-time="5s" points="1" ignored-blocks="wool" earn-points="always">
                 <capture>
                     <cylinder base="-10,32,7" radius="5" height="4" />
                 </capture>

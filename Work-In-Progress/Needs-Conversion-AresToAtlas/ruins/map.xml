@@ -27,11 +27,11 @@
             <effect duration="4s" amplifier="10">regeneration</effect>
             <game-mode>adventure</game-mode>
         </loadout>
-        <loadout id="blue-kit" parents="main-kit">
+        <loadout id="blue-kit" parent="main-kit">
             <helmet unbreakable="true" color="#0066cc" material="leather helmet" />
             <leggings unbreakable="true" color="#0066cc" material="leather leggings" />
         </loadout>
-        <loadout id="red-kit" parents="main-kit">
+        <loadout id="red-kit" parent="main-kit">
             <helmet unbreakable="true" color="#cd0000" material="leather helmet" />
             <leggings unbreakable="true" color="#cd0000" material="leather leggings" />
         </loadout>
@@ -68,9 +68,9 @@
 	<zones enter="only-blue" velocity="0,1.9,0.3" region="north-pad" />
     <objectives>
         <hills depreciate="false" capture-time="5s" points="3">
-            <hill name="North" progress="indicator-north" captured="indicator-north" capture="capture-north" />
-            <hill name="Middle" progress="indicator-mid" captured="indicator-mid" capture="capture-mid" />
-            <hill name="South" progress="indicator-south" captured="indicator-south" capture="capture-south" />
+            <hill name="North" progress="indicator-north" captured="indicator-north" capture="capture-north" earn-points="always" />
+            <hill name="Middle" progress="indicator-mid" captured="indicator-mid" capture="capture-mid" earn-points="always" />
+            <hill name="South" progress="indicator-south" captured="indicator-south" capture="capture-south" earn-points="always" />
             <scores limit="2500">
                 <score id="bscore" team="blue-team" />
                 <score id="rscore" team="red-team" />

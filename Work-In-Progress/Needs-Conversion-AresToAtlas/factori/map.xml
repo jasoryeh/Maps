@@ -52,11 +52,11 @@
             <chestplate unbreakable="true" material="chainmail chestplate" />
             <boots unbreakable="true" material="iron boots" />
         </loadout>
-        <loadout id="red-kit" parents="spawn">
+        <loadout id="red-kit" parent="spawn">
             <helmet color="#cd0000" unbreakable="true" material="leather helmet" />
             <leggings color="#cd0000" unbreakable="true" material="leather leggings" />
         </loadout>
-        <loadout id="blue-kit" parents="spawn">
+        <loadout id="blue-kit" parent="spawn">
             <helmet color="#0066cc" unbreakable="true" material="leather helmet" />
             <leggings color="#0066cc" unbreakable="true" material="leather leggings" />
         </loadout>
@@ -69,7 +69,7 @@
         <load-group id="no-build"/>
     </zones>
     <hills depreciate="false">
-        <hill name="Point A" neutral-state="true" required="false" capture-time="5s" points="1" ignored-blocks="wool">
+        <hill name="Point A" neutral-state="true" required="false" capture-time="5s" points="1" ignored-blocks="wool" earn-points="always">
             <capture>
                 <cuboid min="-53,9,-50" max="-57,12,-54" />
             </capture>
@@ -78,7 +78,7 @@
             </progress>
             <!--<captured><cuboid min="-52,29,-52" max="-57,23,-51"/></captured>-->
         </hill>
-        <hill name="Middle" neutral-state="true" required="false" capture-time="5s" points="1" ignored-blocks="wool">
+        <hill name="Middle" neutral-state="true" required="false" capture-time="5s" points="1" ignored-blocks="wool" earn-points="always">
             <capture>
                 <cuboid min="-47,5,-35" max="-41,8,-29" />
             </capture>
@@ -86,7 +86,7 @@
                 <cuboid min="-47,5,-35" max="-41,5,-29" />
             </progress>
         </hill>
-        <hill name="Point B" neutral-state="true" required="false" capture-time="5s" points="1" ignored-blocks="wool">
+        <hill name="Point B" neutral-state="true" required="false" capture-time="5s" points="1" ignored-blocks="wool" earn-points="always">
             <capture>
                 <cuboid min="-31,9,-10" max="-35,12,-14" />
             </capture>
