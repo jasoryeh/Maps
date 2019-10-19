@@ -46,6 +46,7 @@
         <loadout id="spawn">
             <item slot="0" material="stone sword" />
             <item slot="1" material="bow" />
+			<item amount="16" material="cooked beef" slot="2"/>
             <item slot="8" amount="16" material="arrow" />
             <potion duration="4s" amplifier="3">heal</potion>
             <potion duration="4s" amplifier="3">damage resistance</potion>
