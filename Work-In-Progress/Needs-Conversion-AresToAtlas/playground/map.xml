@@ -81,7 +81,7 @@
                 </progress>
                 <!--<captured><cuboid min="2,27,-4" max="15,22,-17"/></captured>-->
             </hill>
-            <hill name="Roundabout" neutral-state="true" required="false" capture-time="5s" points="1" earn-points="always" ignored-blocks="">
+            <hill name="Roundabout" neutral-state="true" required="false" capture-time="5s" points="1" earn-points="always">
                 <capture>
                     <cylinder base="-10,32,7" radius="5" height="4" />
                 </capture>
