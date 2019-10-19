@@ -22,6 +22,7 @@
             <boots unbreakable="true" material="iron boots" />
             <effect duration="4s" amplifier="10">damage resistance</effect>
             <effect duration="4s" amplifier="10">regeneration</effect>
+			<saturation action="set">20000</saturation>
         </loadout>
         <loadout id="blue-kit" parent="main-kit">
             <helmet unbreakable="true" color="#0066cc" material="leather helmet" />

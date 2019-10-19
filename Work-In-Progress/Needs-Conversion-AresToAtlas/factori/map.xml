@@ -49,6 +49,7 @@
             <item slot="8" amount="16" material="arrow" />
             <potion duration="4s" amplifier="3">heal</potion>
             <potion duration="4s" amplifier="3">damage resistance</potion>
+			<saturation action="set">20000</saturation>
             <chestplate unbreakable="true" material="chainmail chestplate" />
             <boots unbreakable="true" material="iron boots" />
         </loadout>
