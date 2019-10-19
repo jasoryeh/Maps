@@ -58,7 +58,7 @@
         <cylinder id="north-pad" base="39,1,-354" radius="2" height="1" />
         <cuboid id="capture-north" min="42,11,-337" max="36,14,-331" />
         <cuboid id="capture-mid" min="36,1,-302" max="42,4,-308" />
-        <cuboid id="capture-south" min="36,11,-273" max="42,11,-279" />
+        <cuboid id="capture-south" min="36,11,-273" max="42,14,-279" />
         <cylinder id="indicator-north" base="39,11,-334" radius="4" height="2" />
         <cylinder id="indicator-mid" base="39,1,-305" radius="4" height="2" />
         <cylinder id="indicator-south" base="39,11,-276" radius="4" height="2" />
