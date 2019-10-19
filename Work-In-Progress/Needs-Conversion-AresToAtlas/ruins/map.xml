@@ -65,6 +65,17 @@
         <!-- Pads? <apply region="south-pad" velocity="0,1.9,-0.3" />-->
         <!-- Pads? <apply region="north-pad" velocity="0,1.9,0.3" />-->
     </regions>
+    <module-group id="jumppad">
+        <zone velocity="$vel">
+            <region>
+                <cylinder base="$base" radius="$radius" height="$height" />
+            </region>
+        </zone>
+    </module-group>
+	<zones>
+        <load-group id="jumppad" base="39,1,-256" radius="2" height="1" vel="0, 1.9, -0.3"/>
+        <load-group id="jumppad" base="39,1,-354" radius="2" height="1" vel="0, 1.9, 0.3"/>
+	</zones>
 	<zones enter="only-red" velocity="0,1.9,-0.3" region="south-pad" />
 	<zones enter="only-blue" velocity="0,1.9,0.3" region="north-pad" />
     <objectives>
