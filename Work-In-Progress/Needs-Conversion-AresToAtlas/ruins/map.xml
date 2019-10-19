@@ -42,8 +42,8 @@
     </loadouts>
     <spawns respawn-delay="3.5s">
         <spawn yaw="180" region="spawn-default" />
-        <spawn team="blue-team" kit="blue-kit" yaw="-90" region="spawn-blue" />
-        <spawn team="red-team" kit="red-kit" yaw="90" region="spawn-red" />
+        <spawn team="blue-team" loadout="blue-kit" yaw="-90" region="spawn-blue" />
+        <spawn team="red-team" loadout="red-kit" yaw="90" region="spawn-red" />
     </spawns>
     <filters>
         <team id="only-blue">blue-team</team>
@@ -53,14 +53,14 @@
         <point id="spawn-default">39,1.5,-304</point>
         <point id="spawn-red">97,9,-304</point>
         <point id="spawn-blue">-18,9,-304</point>
-        <cylinder id="south-pad" base="39.5,1,-255.5" radius="2" height="1" />
-        <cylinder id="north-pad" base="39.5,1,-353.5" radius="2" height="1" />
-        <cuboid id="capture-north" min="43,12,-337" max="36,14,-330" />
-        <cuboid id="capture-mid" min="36,1,-308" max="43,4,-301" />
-        <cuboid id="capture-south" min="36,12,-272" max="43,14,-279" />
-        <cylinder id="indicator-north" base="39.5,11,-333.5" radius="4" height="2" />
-        <cylinder id="indicator-mid" base="39.5,0,-304.5" radius="4" height="2" />
-        <cylinder id="indicator-south" base="39.5,11,-275.5" radius="4" height="2" />
+        <cylinder id="south-pad" base="39,1,-256" radius="2" height="1" />
+        <cylinder id="north-pad" base="39,1,-354" radius="2" height="1" />
+        <cuboid id="capture-north" min="42,11,-337" max="36,14,-331" />
+        <cuboid id="capture-mid" min="36,1,-302" max="42,4,-308" />
+        <cuboid id="capture-south" min="36,11,-273" max="42,11,-279" />
+        <cylinder id="indicator-north" base="39,11,-334" radius="4" height="2" />
+        <cylinder id="indicator-mid" base="39,1,-305" radius="4" height="2" />
+        <cylinder id="indicator-south" base="39,11,-276" radius="4" height="2" />
         <!-- Pads? <apply region="south-pad" velocity="0,1.9,-0.3" />-->
         <!-- Pads? <apply region="north-pad" velocity="0,1.9,0.3" />-->
     </regions>
@@ -98,4 +98,7 @@
             </any>
         </repair-tools>
     </items>
+    <zones>
+        <load-group id="no-build"/>
+    </zones>
 </map>

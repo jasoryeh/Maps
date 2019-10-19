@@ -41,12 +41,12 @@
         </loadout>
     </loadouts>
     <spawns respawn-delay="5s" respawn-blindness="true">
-        <spawn team="red-team" kit="red-kit">
+        <spawn team="red-team" loadout="red-kit">
             <regions yaw="90">
                 <block>-861.5,155.5,-664.5</block>
             </regions>
         </spawn>
-        <spawn team="blue-team" kit="blue-kit">
+        <spawn team="blue-team" loadout="blue-kit">
             <regions yaw="-90">
                 <block>-921.5,155.5,-664.5</block>
             </regions>
@@ -59,14 +59,12 @@
     </spawns>
     <objectives>
         <hills depreciate="false">
-            <hill name="Point A" capture-time="5s" points="1">
+            <hill name="Point A" capture-time="5s" points="1" ignored-blocks="wool">
                 <capture>
-                    <cuboid min="-888,152,-685" max="-895,155,-690" />
-                    <cuboid min="-889,152,-684" max="-894,155,-691" />
+                    <cuboid min="-889,152,-691" max="-895,156,-685" />
                 </capture>
                 <progress>
-                    <cuboid min="-888,152,-685" max="-895,155,-690" />
-                    <cuboid min="-889,152,-684" max="-894,155,-691" />
+                    <cuboid min="-889,152,-691" max="-895,152,-685" />
                 </progress>
                 <!--<captured>
             <cuboid min="-888,152,-685" max="-895,155,-690" />
@@ -74,14 +72,12 @@
             <cuboid min="-887,152,-696" max="-896,173,-693" />		
         </captured>-->
             </hill>
-            <hill name="Point B" capture-time="5s" points="1">
+            <hill name="Point B" capture-time="5s" points="1" ignored-blocks="wool">
                 <capture>
-                    <cuboid min="-889,152,-638" max="-894,155,-645" />
-                    <cuboid min="-888,152,-639" max="-895,155,-644" />
+                    <cuboid min="-888,152,-639" max="-895,156,-645" />
                 </capture>
                 <progress>
-                    <cuboid min="-889,152,-638" max="-894,155,-645" />
-                    <cuboid min="-888,152,-639" max="-895,155,-644" />
+                    <cuboid min="-888,152,-639" max="-895,152,-645" />
                 </progress>
                 <!--<captured>
             <cuboid min="-889,152,-638" max="-894,155,-645" />
@@ -89,14 +85,12 @@
             <cuboid min="-887,152,-636" max="-896,173,-633" />
         </captured>-->
             </hill>
-            <hill name="Middle" capture-time="5s" points="1">
+            <hill name="Middle" capture-time="5s" points="1" ignored-blocks="wool">
                 <capture>
-                    <cuboid min="-889,144,-661" max="-894,147,-668" />
-                    <cuboid min="-895,144,-667" max="-888,147,-662" />
+                    <cuboid min="-889,144,-662" max="-895,148,-668" />
                 </capture>
                 <progress>
-                    <cuboid min="-889,144,-661" max="-894,147,-668" />
-                    <cuboid min="-895,144,-667" max="-888,147,-662" />
+                    <cuboid min="-889,144,-662" max="-895,144,-668" />
                 </progress>
                 <!--<captured>
             <cuboid min="-889,144,-661" max="-894,147,-668" />

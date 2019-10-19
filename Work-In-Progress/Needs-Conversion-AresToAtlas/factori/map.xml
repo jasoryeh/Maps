@@ -69,29 +69,29 @@
         <load-group id="no-build"/>
     </zones>
     <hills depreciate="false">
-        <hill name="Point A" neutral-state="true" required="false" capture-time="5s" points="1">
+        <hill name="Point A" neutral-state="true" required="false" capture-time="5s" points="1" ignored-blocks="wool">
             <capture>
-                <cuboid min="-57,10,-54" max="-52,12,-49" />
+                <cuboid min="-53,9,-50" max="-57,12,-54" />
             </capture>
             <progress>
-                <cylinder base="-54.5,9,-51.5" radius="3" height="1" />
+                <cuboid min="-53,9,-50" max="-57,9,-54" />
             </progress>
             <!--<captured><cuboid min="-52,29,-52" max="-57,23,-51"/></captured>-->
         </hill>
-        <hill name="Middle" neutral-state="true" required="false" capture-time="5s" points="1">
+        <hill name="Middle" neutral-state="true" required="false" capture-time="5s" points="1" ignored-blocks="wool">
             <capture>
-                <cuboid min="-47,6,-35" max="-40,8,-28" />
+                <cuboid min="-47,5,-35" max="-41,8,-29" />
             </capture>
             <progress>
-                <cylinder base="-43.5,5,-31.5" radius="5" height="1" />
+                <cuboid min="-47,5,-35" max="-41,5,-29" />
             </progress>
         </hill>
-        <hill name="Point B" neutral-state="true" required="false" capture-time="5s" points="1">
+        <hill name="Point B" neutral-state="true" required="false" capture-time="5s" points="1" ignored-blocks="wool">
             <capture>
-                <cuboid min="-30,10,-9" max="-35,12,-14" />
+                <cuboid min="-31,9,-10" max="-35,12,-14" />
             </capture>
             <progress>
-                <cylinder base="-32.5,9,-11.5" radius="3" height="1" />
+                <cuboid min="-31,9,-10" max="-35,9,-14" />
             </progress>
             <!--<captured><cuboid min="-35,29,-11" max="-30,23,-12"/></captured>-->
         </hill>
