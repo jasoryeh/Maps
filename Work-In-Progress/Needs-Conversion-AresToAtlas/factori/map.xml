@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map name="Factori" version="1.1.0" spec="1.0.6" proto="1.4.2" genre="koth">
-    <include src="defaults.xml"/>
+    <include src="defaults.xml" />
     <gametype>hill</gametype>
     <!--<objective>Be the first team to reach 750 points!</objective>-->
     <authors>
@@ -49,7 +49,7 @@
             <item slot="8" amount="16" material="arrow" />
             <potion duration="4s" amplifier="3">heal</potion>
             <potion duration="4s" amplifier="3">damage resistance</potion>
-			<saturation action="set">20000</saturation>
+            <saturation action="set">20000</saturation>
             <chestplate unbreakable="true" material="chainmail chestplate" />
             <boots unbreakable="true" material="iron boots" />
         </loadout>
@@ -67,40 +67,42 @@
         </loadout>
     </loadouts>
     <zones>
-        <load-group id="no-build"/>
+        <load-group id="no-build" />
     </zones>
-    <hills depreciate="false">
-        <hill name="Point A" neutral-state="true" required="false" capture-time="5s" points="1" earn-points="always">
-            <capture>
-                <cuboid min="-53,9,-50" max="-57,12,-54" />
-            </capture>
-            <progress>
-                <cuboid min="-53,9,-50" max="-57,9,-54" />
-            </progress>
-            <!--<captured><cuboid min="-52,29,-52" max="-57,23,-51"/></captured>-->
-        </hill>
-        <hill name="Middle" neutral-state="true" required="false" capture-time="5s" points="1" earn-points="always">
-            <capture>
-                <cuboid min="-47,5,-35" max="-41,8,-29" />
-            </capture>
-            <progress>
-                <cuboid min="-47,5,-35" max="-41,5,-29" />
-            </progress>
-        </hill>
-        <hill name="Point B" neutral-state="true" required="false" capture-time="5s" points="1" earn-points="always">
-            <capture>
-                <cuboid min="-31,9,-10" max="-35,12,-14" />
-            </capture>
-            <progress>
-                <cuboid min="-31,9,-10" max="-35,9,-14" />
-            </progress>
-            <!--<captured><cuboid min="-35,29,-11" max="-30,23,-12"/></captured>-->
-        </hill>
-        <scores limit="750">
-            <score id="bscore" team="blue" />
-            <score id="rscore" team="red" />
-        </scores>
-    </hills>
+    <objectives>
+        <hills depreciate="false">
+            <hill name="Point A" neutral-state="true" required="false" capture-time="5s" points="1" earn-points="always">
+                <capture>
+                    <cuboid min="-53,9,-50" max="-57,12,-54" />
+                </capture>
+                <progress>
+                    <cuboid min="-53,9,-50" max="-57,9,-54" />
+                </progress>
+                <!--<captured><cuboid min="-52,29,-52" max="-57,23,-51"/></captured>-->
+            </hill>
+            <hill name="Middle" neutral-state="true" required="false" capture-time="5s" points="1" earn-points="always">
+                <capture>
+                    <cuboid min="-47,5,-35" max="-41,8,-29" />
+                </capture>
+                <progress>
+                    <cuboid min="-47,5,-35" max="-41,5,-29" />
+                </progress>
+            </hill>
+            <hill name="Point B" neutral-state="true" required="false" capture-time="5s" points="1" earn-points="always">
+                <capture>
+                    <cuboid min="-31,9,-10" max="-35,12,-14" />
+                </capture>
+                <progress>
+                    <cuboid min="-31,9,-10" max="-35,9,-14" />
+                </progress>
+                <!--<captured><cuboid min="-35,29,-11" max="-30,23,-12"/></captured>-->
+            </hill>
+            <scores limit="750">
+                <score id="bscore" team="blue" />
+                <score id="rscore" team="red" />
+            </scores>
+        </hills>
+    </objectives>
     <kills>
         <rewards>
             <reward loadout="kill-reward" />
